@@ -1,6 +1,5 @@
 /*
 cse 414-2019sp
-Jinlin xiang
 homework1
 */
 
