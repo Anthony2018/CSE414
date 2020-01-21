@@ -52,7 +52,7 @@ LIMIT 1;
 
 SELECT DISTINCT C.name
 FROM FLIGHTS AS F
-JOIN MONTHS M ON M.mid = f.month_id
+JOIN MONTHS M ON M.mid = F.month_id
 JOIN CARRIERS AS C ON C.cid = f.carrier_id
 GROUP BY f.day_of_month,M.months,C.name
 HAVING COUNT(*)>1000;
