@@ -1,0 +1,22 @@
+///sq1
+SELECT  u.name as city
+FROM geo.world x, x.mondial.country y, y.province z, 
+            CASE  WHEN is_array(z.city) THEN z.city
+                  ELSE [z.city] END u
+WHERE  y.name='Peru';
+
+///sq2
+
+SELECT  y.name as country_name, y.population, count(r) as religion_num
+FROM geo.world x, x.mondial.country y, 
+     CASE WHEN is_array(y.religions) 
+     THEN y.religions 
+     ELSE [y.religions] END r 
+GROUP BY y.name, y.population
+ORDER BY y.name ASC;
+
+//sq3
+
+
+
+
