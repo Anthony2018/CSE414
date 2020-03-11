@@ -1,0 +1,7 @@
+**/flights-small.csv
+**/*.db
+**/carriers.csv
+**/months.csv
+**/weekdays.csv
+**/flights-small-all.tar.gz
+**/hw4.db
